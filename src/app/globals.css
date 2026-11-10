@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-veil-background: #07070b;
+  --color-veil-surface: #101018;
+  --color-veil-primary: #a855f7;
+  --color-veil-secondary: #22d3ee;
+  --color-veil-muted: #858599;
+  --font-sans: "Manrope Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+  background: #07070b;
+  color: #f8fafc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: #07070b;
+  color: #f8fafc;
+  font-family: "Manrope Variable", ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: rgb(168 85 247 / 34%);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid rgb(103 232 249 / 86%);
+  outline-offset: 3px;
+}
+
+.text-gradient {
+  background: linear-gradient(105deg, #fff 6%, #d8b4fe 49%, #67e8f9 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
